@@ -1,0 +1,38 @@
+<script>
+	function Validate() {
+		var w = document.forms["accountcreate"]["username"].value;
+		if (w == "") {
+			alert("Please choose a username");
+			return false;
+		}
+	
+		var x = document.forms["accountcreate"]["fname"].value;
+		if (x == "") {
+			alert ("Please provide your First Name");
+			return false;
+		}
+		
+		var y = document.forms["accountcreate"]["lname"].value;
+		if (y == "") {
+			alert ("Please provide your Last Name");
+			return false;
+		}
+		
+		var z = document.forms["accountcreate"]["email"].value;
+		if (z == "") {
+			alert ("Please provide your email address");
+			return false;
+		}
+		
+		var p = document.forms["accountcreate"]["password"].value;
+		if (p == "") {
+			alert ("Please provide your password");
+			return false;
+		}
+		 plength = p.length;
+		if (plength < 10) {
+			alert("Your password is not long enough")
+			return false;
+			}
+	}
+<script>	
